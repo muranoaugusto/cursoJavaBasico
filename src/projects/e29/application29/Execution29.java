@@ -1,41 +1,48 @@
 package projects.e29.application29;
 import java.util.Scanner;
 
-import projects.e29.entities29.Operation29;
-
-import java.util.Locale;
-
 public class Execution29 {
 
-    public int result;
+    int intN1, intN2;
+    double doubleN1;
 
-    public void calc() {
-
-        Locale.setDefault(Locale.US);
-
-        Scanner sc = new Scanner(System.in);
-
-        Operation29 NovaOperation01 = new Operation29();
         
+    public void setNumbersInt() {
+
+        Scanner scNI = new Scanner(System.in);
+    
         System.out.println("Insira o primeiro valor:");
-        int n1 = sc.nextInt();
+        intN1 = scNI.nextInt();
         System.out.println("Insira o segundo valor:");
-        int n2 = sc.nextInt();
+        intN2 = scNI.nextInt();
+        scNI.close();
+        }
 
-        sc.close();
+        public int getNumbersIntN1() {
+
+        return intN1;
     
-        NovaOperation01.soma(n1,n2);
-        
-        result = NovaOperation01.getResultadoDaOperacao();
-    }
+        }
 
-        public String resultCalc() {
-        
-        return "Resultado: " + result;
-  
-    }
+        public int getNumbersIntN2() {
+
+        return intN2;
     
+        }
 
 
+        public void setNumbersDouble() {
+
+        Scanner scND = new Scanner(System.in);
     
+        System.out.println("Insira o raio do círculo:");
+        doubleN1 = scND.nextDouble();
+        scND.close();
+        }
+
+        public double getNumbersDouble1() {
+
+        return doubleN1;
+    
+        }
 }

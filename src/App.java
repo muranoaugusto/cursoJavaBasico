@@ -9,7 +9,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);       
        
-        String[] exercicios = {"exe2901", "exe2902", "exe89EXE"};
+        String[] exercicios = {"exe2901", "exe2902", "exe89EXE", "exe8901", "exe8902"};
         
         String x = new String();
 
@@ -39,6 +39,21 @@ public class App {
                 NovaExecucaoE89Exe.example();
                 result = true;
             break;
+
+            case "exe8901":
+                System.out.println("Execucao Exercicio 89 - 01");
+                E89 NovaExecucaoE8901 = new E89();
+                NovaExecucaoE8901.exe1();
+                result = true;
+            break;
+
+            case "exe8902":
+                System.out.println("Execucao Exercicio 89 - 02");
+                E89 NovaExecucaoE8902 = new E89();
+                NovaExecucaoE8902.exe2();
+                result = true;
+            break;
+
 
             default:
                 System.out.println("Selecione uma opcao valida");

@@ -9,7 +9,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);       
        
-        String[] exercicios = {"exe2901", "exe2902", "exe89EXE", "exe8901", "exe8902"};
+        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903"};
         
         String x = new String();
 
@@ -19,41 +19,47 @@ public class App {
         
         switch (x) {
             
-            case "exe2901":
+            case "1":
                 System.out.println("Execucao Exercicio 29 - 01");
                 E29 NovaExecucaoE2901 = new E29();
                 System.out.println(NovaExecucaoE2901.exe1());
                 result = true;
             break;
 
-            case "exe2902":
+            case "2":
                 System.out.println("Execucao Exercicio 29 - 02");
                 E29 NovaExecucaoE2902 = new E29();
                 System.out.printf("%.4f%n",NovaExecucaoE2902.exe2());
                 result = true;
             break;
 
-            case "exe89EXE":
+            case "3":
                 System.out.println("Execucao Exercicio 89 - EXEMPLO");
                 E89 NovaExecucaoE89Exe = new E89();
                 NovaExecucaoE89Exe.example();
                 result = true;
             break;
 
-            case "exe8901":
+            case "4":
                 System.out.println("Execucao Exercicio 89 - 01");
                 E89 NovaExecucaoE8901 = new E89();
                 NovaExecucaoE8901.exe1();
                 result = true;
             break;
 
-            case "exe8902":
+            case "5":
                 System.out.println("Execucao Exercicio 89 - 02");
                 E89 NovaExecucaoE8902 = new E89();
                 NovaExecucaoE8902.exe2();
                 result = true;
             break;
 
+            case "6":
+                System.out.println("Execucao Exercicio 89 - 03");
+                E89 NovaExecucaoE8903 = new E89();
+                NovaExecucaoE8903.exe3();
+                result = true;
+            break;
 
             default:
                 System.out.println("Selecione uma opcao valida");

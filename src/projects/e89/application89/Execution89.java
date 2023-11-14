@@ -1,13 +1,15 @@
 package projects.e89.application89;
 
+import java.util.Locale;
 import java.util.Scanner;
 
+import projects.e89.entities89.People89;
 import projects.e89.entities89.Product89;
 
 public class Execution89 {
 //  Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros
 //  e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos. 
-
+    
     Scanner sc = new Scanner(System.in);
     double avg;
         
@@ -109,6 +111,65 @@ public class Execution89 {
             System.out.printf("%.2f%n", avg);
     }
 
+public void resultadoExe3(){
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Quantas pessoas serão digitadas");    
+       
+        int n = sc.nextInt();
+        
+        People89[] people89An = new People89[n];
+    
+        System.out.println("Insira "+ n + " pessoas");
+            int numeral = 1;
+            for (int i=0; i<n; i++) {
+            // sc.nextLine();
+            System.out.println("Dados da "+ (numeral+i) +"ª pessoa");
+            System.out.print("Nome: ");
+            String nome = sc.next();
+
+            System.out.print("Idade: ");
+            int idade = sc.nextInt();
+
+            System.out.print("Altura: ");
+            double altura = sc.nextDouble();
+            
+            People89 peopleAr = new People89(nome, idade, altura);
+            people89An[i] = peopleAr;         
+        }
+
+            double avg, sum = 0.0;
+
+            for (int i=0; i<n; i++){
+                sum += people89An[i].getAltura();
+            }
+    
+            avg = sum / n;
+            System.out.print("Altura media: " ); 
+            System.out.printf("%.2f%n", avg);
+
+            double ndp = 0.0;
+            for (int i=0; i<n; i++){
+               if (people89An[i].getIdade()<16){
+                ndp++;
+               }
+               else{
+               }
+            }
+            
+            double qIdadeMedia = ndp / n *100;
+            System.out.print("Pessoas com menos de 16 anos: " ); 
+            System.out.printf("%.1f%%%n", qIdadeMedia);
+                         
+            for (int i=0; i<n; i++){
+               if (people89An[i].getIdade()<16){
+                System.out.println(people89An[i].getNome());;
+               }
+
+        }   
+    }
 
 }
 

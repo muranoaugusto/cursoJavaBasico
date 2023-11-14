@@ -171,10 +171,38 @@ public void resultadoExe3(){
         }   
     }
 
+    public void resultadoExe4(){
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Quantos numeros voce vai digitar");    
+       
+        int n = sc.nextInt();
+       
+        int[] aI = new int[n];
+    
+        System.out.println("Insira "+ n + " numeros inteiros");
+            
+            for (int i=0; i<n; i++) {
+            int numerosInteiros = sc.nextInt();
+            aI[i] = numerosInteiros;         
+        }
+
+            for (int i=0; i<n; i++){
+
+                int restoDaDivisao, contadorDePares=0;
+
+                restoDaDivisao = aI[i]%aI[i];
+                if (restoDaDivisao == 0){
+                contadorDePares ++;
+                System.out.print(aI[i]+", ");        
+
+                }
+                
+                System.out.print("Quantidade de numeros pares: " + contadorDePares);
+
+            }   
+
+    }   
 }
-
-
-
-
-  
-

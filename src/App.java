@@ -9,7 +9,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);       
        
-        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903"};
+        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903", "[7]exe8904"};
         
         String x = new String();
 
@@ -58,6 +58,13 @@ public class App {
                 System.out.println("Execucao Exercicio 89 - 03");
                 E89 NovaExecucaoE8903 = new E89();
                 NovaExecucaoE8903.exe3();
+                result = true;
+            break;
+
+            case "7":
+                System.out.println("Execucao Exercicio 89 - 04");
+                E89 NovaExecucaoE8904 = new E89();
+                NovaExecucaoE8904.exe4();
                 result = true;
             break;
 

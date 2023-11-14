@@ -69,7 +69,7 @@ public class Execution89 {
                 System.out.println("NUMEROS NEGATIVOS: "+ aN[i]);
                 }    
         }
-
+        sc.close();
     }
 
     public void resultadoExe2(){
@@ -109,6 +109,8 @@ public class Execution89 {
             }
             avg = sum / n;
             System.out.printf("%.2f%n", avg);
+
+            sc.close();
     }
 
 public void resultadoExe3(){
@@ -169,6 +171,7 @@ public void resultadoExe3(){
                }
 
         }   
+        sc.close();
     }
 
     public void resultadoExe4(){
@@ -178,7 +181,7 @@ public void resultadoExe3(){
         
         System.out.println("Quantos numeros voce vai digitar");    
        
-        int n = sc.nextInt();
+        int n = sc.nextInt(), restoDaDivisao, contadorDePares=0;;
        
         int[] aI = new int[n];
     
@@ -191,18 +194,18 @@ public void resultadoExe3(){
 
             for (int i=0; i<n; i++){
 
-                int restoDaDivisao, contadorDePares=0;
-
-                restoDaDivisao = aI[i]%aI[i];
+                restoDaDivisao = aI[i]%2;
                 if (restoDaDivisao == 0){
                 contadorDePares ++;
-                System.out.print(aI[i]+", ");        
+                System.out.print(" "+aI[i]);        
 
                 }
-                
-                System.out.print("Quantidade de numeros pares: " + contadorDePares);
 
             }   
+            System.out.println();
+            System.out.println("Quantidade de numeros pares: " + contadorDePares);
 
+        sc.close();
     }   
+
 }

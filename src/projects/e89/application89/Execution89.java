@@ -208,4 +208,34 @@ public void resultadoExe3(){
         sc.close();
     }   
 
+    public void resultadoExe5(){
+
+    //  Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida, mostrar na tela
+    //  o maior número do vetor (supor não haver empates). Mostrar também a posição do maior elemento,
+    //  considerando a primeira posição como 0 (zero). 
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Quantos numeros voce vai digitar");    
+        int limit = 0;
+        int n = sc.nextInt();
+       
+        int[] aI = new int[n];
+    
+        System.out.println("Insira "+ n + " numeros inteiros");
+            
+            for (int i=0; i<n; i++) {
+            int numerosInteiros = sc.nextInt();
+            aI[i] = numerosInteiros;         
+        }
+
+            for(int k = 0; k < aI.length; k++){
+            aI[k] = limit;
+        }
+        
+
+    }
+
 }
+
+    

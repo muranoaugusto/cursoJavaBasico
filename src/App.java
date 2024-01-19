@@ -3,13 +3,14 @@ import java.util.Scanner;
 
 import projects.e29.E29;
 import projects.e89.E89;
+import projects.projetoParalelo.operation.Verificador;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);       
        
-        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903", "[7]exe8904"};
+        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903", "[7]exe8904", "[8]VerificadorDeIdade"};
         
         String x = new String();
 
@@ -65,6 +66,13 @@ public class App {
                 System.out.println("Execucao Exercicio 89 - 04");
                 E89 NovaExecucaoE8904 = new E89();
                 NovaExecucaoE8904.exe4();
+                result = true;
+            break;
+
+            case "8":
+                System.out.println("Verificado de Idade");
+                Verificador NovaVerificacao = new Verificador();
+                NovaVerificacao.idade();
                 result = true;
             break;
 

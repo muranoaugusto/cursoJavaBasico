@@ -10,7 +10,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);       
        
-        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903", "[7]exe8904", "[8]VerificadorDeIdade"};
+        String[] exercicios = {"[1]exe2901", "[2]exe2902", "[3]exe89EXE", "[4]exe8901", "[5]exe8902", "[6]exe8903", "[7]exe8904", "[8]exe8905", "[9]VerificadorDeIdade"};
         
         String x = new String();
 
@@ -70,7 +70,14 @@ public class App {
             break;
 
             case "8":
-                System.out.println("Verificado de Idade");
+                System.out.println("Execucao Exercicio 89 - 05");
+                E89 NovaExecucaoE8905 = new E89();
+                NovaExecucaoE8905.exe5();
+                result = true;
+            break;
+
+            case "9":
+                System.out.println("Verificador de Idade");
                 Verificador NovaVerificacao = new Verificador();
                 NovaVerificacao.idade();
                 result = true;

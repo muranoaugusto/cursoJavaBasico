@@ -38,4 +38,10 @@ public class E89{
 
     }
 
+    public void exe5(){
+    Execution89 exe89 = new Execution89();
+    exe89.resultadoExe5();
+    
+    }
+
 }

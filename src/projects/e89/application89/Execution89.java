@@ -222,15 +222,19 @@ public void resultadoExe3(){
        
         int[] aI = new int[n];
     
-        System.out.println("Insira "+ n + " numeros inteiros");
+        System.out.println("Insira "+ n + " numeros inteiros"); 
             
             for (int i=0; i<n; i++) {
             int numerosInteiros = sc.nextInt();
             aI[i] = numerosInteiros;         
         }
 
-            for(int k = 0; k < aI.length; k++){
+            for(int k = aI[0]; k < aI.length; k++){
             aI[k] = limit;
+            
+
+            
+            
         }
         
 

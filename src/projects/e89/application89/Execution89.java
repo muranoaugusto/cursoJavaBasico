@@ -219,7 +219,22 @@ public void resultadoExe3(){
         System.out.println("Quantos numeros voce vai digitar");    
         int limit = 0;
         int n = sc.nextInt();
-       
+        while (limit == 0){
+            
+            if (n > 10) {
+                System.out.println("No máximo 10");    
+                limit = 0;
+                n = sc.nextInt();
+            }
+            else if (n < 1) {
+                System.out.println("O Valor Nao pode ser Negativo");    
+                limit = 0; 
+                n = sc.nextInt();
+            }
+            else {limit = n;
+            }
+        }
+
         int[] aI = new int[n];
     
         System.out.println("Insira "+ n + " numeros inteiros"); 
@@ -228,15 +243,15 @@ public void resultadoExe3(){
             int numerosInteiros = sc.nextInt();
             aI[i] = numerosInteiros;         
         }
-
-            for(int k = aI[0]; k < aI.length; k++){
-            aI[k] = limit;
-            
-
-            
-            
-        }
         
+        for (int k = 0; k < aI.length; k++) {
+            int valor = aI[k];
+
+            if (valor < 0) {
+                System.out.println(valor);
+            
+            }
+        }
 
     }
 

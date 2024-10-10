@@ -28,7 +28,7 @@ public class App {
             switch (m1) {
                 case "1":
                     boolean backToMain1 = false;
-                    while (!backToMain1) {
+                    while (backToMain1 == false) {
                         System.out.println("Menu 29");
                         System.out.println(Arrays.toString(menu2));
                         m2 = sc.nextLine();
@@ -60,7 +60,7 @@ public class App {
 
                 case "2":
                     boolean backToMain2 = false;
-                    while (!backToMain2) {
+                    while (backToMain2 == false) {
                         System.out.println("Menu 36");
                         System.out.println(Arrays.toString(menu3));
                         m3 = sc.nextLine();
@@ -86,7 +86,7 @@ public class App {
 
                 case "3":
                     boolean backToMain3 = false;
-                    while (!backToMain3) {
+                    while (backToMain3 == false) {
                         System.out.println("Menu 89");
                         System.out.println(Arrays.toString(menu4));
                         m4 = sc.nextLine();

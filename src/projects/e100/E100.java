@@ -1,7 +1,5 @@
 package projects.e100;
 
-import java.util.Scanner;
-
 import projects.e100.application100.Execution100;
 
 

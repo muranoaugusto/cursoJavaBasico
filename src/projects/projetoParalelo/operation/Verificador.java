@@ -59,5 +59,7 @@ public class Verificador {
         // Exibir resultados
         System.out.printf("Idade: %d anos, %d meses, %d dias, %d horas, %d minutos, %d segundos\n",
                 anos, meses, dias, horas, minutos, segundos);
+
+        scanner.close();
     }
 }

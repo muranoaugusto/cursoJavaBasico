@@ -34,7 +34,7 @@ public class Cadastro {
 
         novaPessoa.setDataDeNascimento(dataFormatada);
         
-        
+        sc.close();
 
     }
 

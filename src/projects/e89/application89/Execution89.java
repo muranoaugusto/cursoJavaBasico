@@ -71,7 +71,10 @@ public class Execution89 {
         }
         sc.close();
     }
-
+//   Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida: 
+//   - Imprimir todos os elementos do vetor 
+//   - Mostrar na tela a soma e a média dos elementos do vetor 
+    
     public void resultadoExe2(){
         Scanner sc = new Scanner(System.in);
         
@@ -254,6 +257,12 @@ public void resultadoExe3(){
         }
         
         sc.close();
+
+    }
+
+    public void resultadoExe6(){
+    
+
 
     }
 

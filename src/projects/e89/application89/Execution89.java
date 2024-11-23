@@ -252,6 +252,8 @@ public void resultadoExe3(){
             
             }
         }
+        
+        sc.close();
 
     }
 

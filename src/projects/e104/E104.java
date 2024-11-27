@@ -22,20 +22,70 @@ public class E104 {
 
     int [][] exec = new int[linha][coluna];
 
+    System.out.println("Digite os elementos da matriz 1:");
+    for (int cordenadaLinha=0; cordenadaLinha<exec.length; cordenadaLinha++){
+        for (int cordenadaColuna=0; cordenadaColuna<exec[cordenadaLinha].length; cordenadaColuna++){ 
+            System.out.print("Elemento [" + cordenadaLinha + "][" + cordenadaColuna + "]: ");
+            exec[cordenadaLinha][cordenadaColuna] = sc.nextInt();
 
- /*    for (int i=0; i<exec.length; i++) {
-        for (int )
-
+        }
 
     }
- */
+
+    System.out.println("\nMatriz inserida:");
+    for (int cordenadaLinha=0; cordenadaLinha<exec.length; cordenadaLinha++){
+        for (int cordenadaColuna=0; cordenadaColuna<exec[cordenadaLinha].length; cordenadaColuna++){ 
+            System.out.print("-" + exec[cordenadaLinha][cordenadaColuna]+ "-");
+        }
+        System.out.println();
+    }
 
 
-    System.out.print(exec);
+    int [][] exec1 = new int[linha][coluna];
+
+    System.out.println("Digite os elementos da matriz 2:");
+    for (int cordenadaLinha=0; cordenadaLinha<exec1.length; cordenadaLinha++){
+        for (int cordenadaColuna=0; cordenadaColuna<exec1[cordenadaLinha].length; cordenadaColuna++){ 
+            System.out.print("Elemento [" + cordenadaLinha + "][" + cordenadaColuna + "]: ");
+            exec1[cordenadaLinha][cordenadaColuna] = sc.nextInt();
+
+        }
+
+    }
+
+    System.out.println("\nMatriz inserida:");
+    for (int cordenadaLinha=0; cordenadaLinha<exec.length; cordenadaLinha++){
+        for (int cordenadaColuna=0; cordenadaColuna<exec1[cordenadaLinha].length; cordenadaColuna++){ 
+            System.out.print("-" + exec1[cordenadaLinha][cordenadaColuna]+ "-");
+        }
+        System.out.println();
+    }
+
+
+    
+        // Somar as matrizes
+        int[][] soma = new int[linha][coluna];
+    
+        for (int cordenadaLinha = 0; cordenadaLinha < soma.length; cordenadaLinha++) {
+            for (int cordenadaColuna = 0; cordenadaColuna < soma[cordenadaLinha].length; cordenadaColuna++) { 
+                soma[cordenadaLinha][cordenadaColuna] = exec[cordenadaLinha][cordenadaColuna] + exec1[cordenadaLinha][cordenadaColuna];
+            }
+        }
+    
+        System.out.println("\nSoma das matrizes:");
+        for (int cordenadaLinha = 0; cordenadaLinha < soma.length; cordenadaLinha++) {
+            for (int cordenadaColuna = 0; cordenadaColuna < soma[cordenadaLinha].length; cordenadaColuna++) { 
+                System.out.print("-" + soma[cordenadaLinha][cordenadaColuna] + "-");
+            }
+            System.out.println();
+
+
+
+
+}
 
     sc.close();
 
     }
-    
 
 }

@@ -1,10 +1,11 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+import projects.e100.E100;
+import projects.e104.E104;
+import projects.e104.E104_2;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
-import projects.e100.E100;
 import projects.projetoParalelo.operation.Verificador;
 
 public class App {
@@ -13,7 +14,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[P]-Projeto_Paralelo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[P]-Projeto_Paralelo"};
         String x = "";
         boolean result = false;
         
@@ -43,6 +44,11 @@ public class App {
                     result = executeExercicio100(sc);
                     break;
 
+                case "5":
+                    // Exercicios 100
+                    result = executeExercicio104(sc);
+                    break;
+                    
                 case "P":
                     // Projeto Paralelo
                     result = executeProjetoParalelo(sc);
@@ -186,6 +192,41 @@ public class App {
             }
         }
         return true;
+
+    }
+    
+        private static boolean executeExercicio104(Scanner sc) {
+            String[] exercicios104 = {"[1]exe104", "[2]exe104_2","[3]Voltar"};
+            boolean result5 = false;
+            
+            while (!result5) {
+                System.out.println(Arrays.toString(exercicios104));
+                String x5 = sc.nextLine();
+                switch (x5) {
+                    case "1":
+                        System.out.println("Execucao Exercicio 104");
+                        E104 novaExecucaoE104 = new E104();
+                        novaExecucaoE104.e104();
+                        result5 = true;
+                        break;
+
+                    case "2":
+                        System.out.println("Execucao Exercicio 104_2");
+                        E104_2 novaExecucaoE104_2 = new E104_2();
+                        novaExecucaoE104_2.e104_2();
+                        result5 = true;
+                        break;
+
+                    case "3":
+                        return false; // Go back to the main menu
+                    default:
+                        System.out.println("Selecione uma opcao valida");
+                        break;
+                }
+            }
+
+            return true;
+
     }
 
     private static boolean executeProjetoParalelo(Scanner sc) {

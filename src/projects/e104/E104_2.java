@@ -3,8 +3,9 @@ package projects.e104;
 import java.util.Scanner;
 
 public class E104_2 {
+    
 
-    public void e104_2() {
+public void e104_2() {
         Scanner sc = new Scanner(System.in);
 
         int linha, coluna;
@@ -114,5 +115,7 @@ public class E104_2 {
     public static void main(String[] args) {
         E104_2 program = new E104_2();
         program.e104_2();
+
     }
+    
 }

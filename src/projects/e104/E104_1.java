@@ -2,17 +2,18 @@ package projects.e104;
 
 import java.util.Scanner;
 
-public class E104 {
+public class E104_1 {
 
-    public void e104() {
+    public void e104_1() {
         Scanner sc = new Scanner(System.in);
 
-		
+		System.out.println("Linhas:");
 		int m = sc.nextInt();
+		System.out.println("Colunas:");
 		int n = sc.nextInt();
 		int[][] mat = new int[m][n];
 		
-		for (int i=0; i<mat.length; i++) {
+		for (int i=0; i<mat.length; i++) { 
 			for (int j=0; j<mat[i].length; j++) {
 				mat[i][j] = sc.nextInt();
 			}
@@ -43,3 +44,5 @@ public class E104 {
 		sc.close();
 	}
 }
+    
+

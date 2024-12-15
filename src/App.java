@@ -1,11 +1,11 @@
 import java.util.Arrays;
 import java.util.Scanner;
-import projects.e100.E100;
-import projects.e104.E104;
-import projects.e104.E104_2;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
+import projects.e100.E100;
+import projects.e104.E104_1;
+import projects.e104.E104_2;
 import projects.projetoParalelo.operation.Verificador;
 
 public class App {
@@ -205,8 +205,8 @@ public class App {
                 switch (x5) {
                     case "1":
                         System.out.println("Execucao Exercicio 104");
-                        E104 novaExecucaoE104 = new E104();
-                        novaExecucaoE104.e104();
+                        E104_1 novaExecucaoE104 = new E104_1();
+                        novaExecucaoE104.e104_1();
                         result5 = true;
                         break;
 

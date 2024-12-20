@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
+
+import projects.curso_alternativo.CursoAlternativo;
 import projects.e100.E100;
 import projects.e104.E104;
 import projects.e104.E104_2;
@@ -14,7 +16,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[P]-Projeto_Paralelo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
         String x = "";
         boolean result = false;
         
@@ -53,6 +55,11 @@ public class App {
                     // Projeto Paralelo
                     result = executeProjetoParalelo(sc);
                     break;
+
+                case "C":
+                    // Projeto Paralelo
+                    result = executeCurso_Alternativo(sc);
+                break;
 
                 default:
                     System.out.println("Selecione uma opcao valida");
@@ -235,4 +242,11 @@ public class App {
         novaVerificacao.idade();
         return true;
     }
+
+    private static boolean executeCurso_Alternativo(Scanner sc) {
+       CursoAlternativo ca = new CursoAlternativo();
+        ca.testandoStream();
+        return true;
+    }
+
 }

@@ -14,7 +14,7 @@ import projects.e123.enum123.WorkerLevel;
 
 public class Execution123 {
 
-	public static void main(String[] args) throws ParseException {
+	public void execution123() throws ParseException {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -26,12 +26,13 @@ public class Execution123 {
 		System.out.print("Name: ");
 		String workerName = sc.nextLine();
 		System.out.print("Level: ");
-		String workerLevel = sc.nextLine();
+		int workerLevel = sc.nextInt();
 		System.out.print("Base salary: ");
 		double baseSalary = sc.nextDouble();
 		
-        Worker123 worker = new Worker123(workerName, baseSalary, WorkerLevel.valueOf(workerLevel),  new Department(departmentName));
+        Worker123 worker = new Worker123(workerName,baseSalary,WorkerLevel.fromCode(workerLevel),new Department (departmentName));
 
+//      Worker123 worker = new Worker123(workerName, baseSalary, WorkerLevel.valueOf(workerLevel),  new Department(departmentName));
 
 		System.out.print("How many contracts to this worker? ");
 		int n = sc.nextInt();

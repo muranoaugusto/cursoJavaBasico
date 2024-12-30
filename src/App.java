@@ -5,6 +5,7 @@ import projects.curso_alternativo.CursoAlternativo;
 import projects.e100.E100;
 import projects.e104.E104;
 import projects.e104.E104_2;
+import projects.e123.E123;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
@@ -16,7 +17,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
         String x = "";
         boolean result = false;
         
@@ -51,6 +52,12 @@ public class App {
                     result = executeExercicio104(sc);
                     break;
                     
+                case "6":
+                    // Exercicios 100
+                    result = executeExercicio123(sc);
+                    break;
+
+
                 case "P":
                     // Projeto Paralelo
                     result = executeProjetoParalelo(sc);
@@ -225,6 +232,33 @@ public class App {
                         break;
 
                     case "3":
+                        return false; // Go back to the main menu
+                    default:
+                        System.out.println("Selecione uma opcao valida");
+                        break;
+                }
+            }
+
+            return true;
+
+    }
+
+            private static boolean executeExercicio123(Scanner sc) {
+            String[] exercicios123 = {"[1]exe123", "[2]Voltar"};
+            boolean result6 = false;
+            
+            while (!result6) {
+                System.out.println(Arrays.toString(exercicios123));
+                String x6 = sc.nextLine();
+                switch (x6) {
+                    case "1":
+                        System.out.println("Execucao Exercicio 123");
+                        E123 novaExecucaoE123 = new E123();
+                        novaExecucaoE123.exe123();
+                        result6 = true;
+                        break;
+
+                    case "2":
                         return false; // Go back to the main menu
                     default:
                         System.out.println("Selecione uma opcao valida");

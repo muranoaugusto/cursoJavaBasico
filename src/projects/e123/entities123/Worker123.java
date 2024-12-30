@@ -20,11 +20,12 @@ public class Worker123 {
     }
     
 //#########################Contrutor#########################
-    public Worker123(String name, double baseSalary, WorkerLevel level, Department departament) {
+    public Worker123(String name, double baseSalary, WorkerLevel level, Department department) {
         this.name = name;
         this.baseSalary = baseSalary;
         this.level = level;
-        this.department = departament;
+        this.department = department;
+        
     }
 //#########################Gets&Sets#########################
     public String getName() {

@@ -1,4 +1,4 @@
-package projects.projetoParalelo.operation;
+package projects.projetoParalelo.dataNascimento.operation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import projects.projetoParalelo.entities.People;
+import projects.projetoParalelo.dataNascimento.entities.People;
 
 public class Cadastro {
     

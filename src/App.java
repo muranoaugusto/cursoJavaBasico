@@ -9,7 +9,7 @@ import projects.e123.E123;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
-import projects.projetoParalelo.operation.Verificador;
+import projects.projetoParalelo.dataNascimento.operation.Verificador;
 
 public class App {
     public static void main(String[] args) throws Exception {

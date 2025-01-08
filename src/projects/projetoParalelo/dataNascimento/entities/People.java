@@ -1,4 +1,4 @@
-package projects.projetoParalelo.entities;
+package projects.projetoParalelo.dataNascimento.entities;
 
 import java.util.Date;
 

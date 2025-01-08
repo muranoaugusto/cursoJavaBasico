@@ -1,11 +1,11 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import projects.e100.E100;
+import projects.e104.E104;
+import projects.e104.E104_2;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
-import projects.e100.E100;
-import projects.e104.E104_1;
-import projects.e104.E104_2;
 import projects.projetoParalelo.operation.Verificador;
 
 public class App {
@@ -14,7 +14,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[P]-Projeto_Paralelo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
         String x = "";
         boolean result = false;
         
@@ -49,10 +49,21 @@ public class App {
                     result = executeExercicio104(sc);
                     break;
                     
+                case "6":
+                    // Exercicios 100
+                    result = executeExercicio123(sc);
+                    break;
+
+
                 case "P":
                     // Projeto Paralelo
                     result = executeProjetoParalelo(sc);
                     break;
+
+                case "C":
+                    // Projeto Paralelo
+                    result = executeCurso_Alternativo(sc);
+                break;
 
                 default:
                     System.out.println("Selecione uma opcao valida");
@@ -229,10 +240,44 @@ public class App {
 
     }
 
+            private static boolean executeExercicio123(Scanner sc) {
+            String[] exercicios123 = {"[1]exe123", "[2]Voltar"};
+            boolean result6 = false;
+            
+            while (!result6) {
+                System.out.println(Arrays.toString(exercicios123));
+                String x6 = sc.nextLine();
+                switch (x6) {
+                    case "1":
+                        System.out.println("Execucao Exercicio 123");
+                        E123 novaExecucaoE123 = new E123();
+                        novaExecucaoE123.exe123();
+                        result6 = true;
+                        break;
+
+                    case "2":
+                        return false; // Go back to the main menu
+                    default:
+                        System.out.println("Selecione uma opcao valida");
+                        break;
+                }
+            }
+
+            return true;
+
+    }
+
     private static boolean executeProjetoParalelo(Scanner sc) {
         System.out.println("Verificador de Idade");
         Verificador novaVerificacao = new Verificador();
         novaVerificacao.idade();
         return true;
     }
+
+    private static boolean executeCurso_Alternativo(Scanner sc) {
+       CursoAlternativo ca = new CursoAlternativo();
+        ca.testandoStream();
+        return true;
+    }
+
 }

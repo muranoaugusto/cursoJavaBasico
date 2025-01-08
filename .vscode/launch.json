@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumToList",
+            "request": "launch",
+            "mainClass": "projects.projetoParalelo.numberToList.NumToList",
+            "projectName": "cursoJavaBasico_ac2705f9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "projects.projetoParalelo.numberToList.App",
+            "projectName": "cursoJavaBasico_ac2705f9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "cursoJavaBasico_ac2705f9"
+        },
+        {
+            "type": "java",
             "name": "E104_2",
             "request": "launch",
             "mainClass": "projects.e104.E104_2",

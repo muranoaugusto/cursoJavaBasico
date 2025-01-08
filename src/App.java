@@ -1,12 +1,14 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import projects.curso_alternativo.CursoAlternativo;
 import projects.e100.E100;
-import projects.e104.E104;
+import projects.e104.E104_1;
 import projects.e104.E104_2;
+import projects.e123.E123;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
-import projects.projetoParalelo.operation.Verificador;
+import projects.projetoParalelo.dataNascimento.operation.Verificador;
 
 public class App {
     public static void main(String[] args) throws Exception {

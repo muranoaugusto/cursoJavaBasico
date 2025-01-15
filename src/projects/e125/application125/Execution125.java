@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
-
 import projects.e125.entities125.Client;
 import projects.e125.entities125.Order;
 import projects.e125.entities125.OrderItem;
@@ -13,10 +12,9 @@ import projects.e125.entities125.Product;
 import projects.e125.enum125.OrderStatus;
 
 
+public class Execution125 {
 
-public class App {
-
-	public static void main(String[] args) throws ParseException {
+	public void execution125() throws ParseException {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);

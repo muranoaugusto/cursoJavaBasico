@@ -5,6 +5,7 @@ import projects.e100.E100;
 import projects.e104.E104_1;
 import projects.e104.E104_2;
 import projects.e123.E123;
+import projects.e125.E125;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
@@ -16,7 +17,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123","[7]exe-12", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
         String x = "";
         boolean result = false;
         
@@ -47,15 +48,19 @@ public class App {
                     break;
 
                 case "5":
-                    // Exercicios 100
+                    // Exercicios 104
                     result = executeExercicio104(sc);
                     break;
                     
                 case "6":
-                    // Exercicios 100
+                    // Exercicios 123
                     result = executeExercicio123(sc);
                     break;
 
+                case "7":
+                    // Exercicios 125
+                    result = executeExercicio125(sc);
+                    break;
 
                 case "P":
                     // Projeto Paralelo
@@ -268,6 +273,35 @@ public class App {
             return true;
 
     }
+
+
+    private static boolean executeExercicio125(Scanner sc) {
+        String[] exercicios125 = {"[1]exe125", "[2]Voltar"};
+        boolean result7 = false;
+        
+        while (!result7) {
+            System.out.println(Arrays.toString(exercicios125));
+            String x7 = sc.nextLine();
+            switch (x7) {
+                case "1":
+                    System.out.println("Execucao Exercicio 125");
+                    E125 novaExecucaoE125 = new E125();
+                    novaExecucaoE125.exe125();
+                    result7 = true;
+                    break;
+
+                case "2":
+                    return false; // Go back to the main menu
+                default:
+                    System.out.println("Selecione uma opcao valida");
+                    break;
+            }
+        }
+
+        return true;
+
+}
+
 
     private static boolean executeProjetoParalelo(Scanner sc) {
         System.out.println("Verificador de Idade");

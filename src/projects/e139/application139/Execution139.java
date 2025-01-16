@@ -25,7 +25,7 @@ public class Execution139 {
 		for (int a=1; a<=n; a++) {
             sc.nextLine();
 			System.out.println("Tax payer #" + a + " data:");
-			System.out.print("PF or PJ (pf/pj)? ");
+			System.out.print("Tax payer type (pf/pj)? ");
 			String type = sc.nextLine();
             System.out.print("Name: ");
 			String setTaxPayerName = sc.nextLine();
@@ -37,15 +37,17 @@ public class Execution139 {
 				list.add(new TaxPayerPF(setTaxPayerName, setTaxPayerAnualIncome, setTaxPayerPFMedicalBills));
 			}
 			
-            else {
-            //if (type.equals("pj")) {
+            //else {
+            else if (type.equals("pj")) {
 				System.out.print("Number of employees: ");
 				int setTaxPayerPJNumberWorkers = sc.nextInt();
 				list.add(new TaxPayerPJ(setTaxPayerName, setTaxPayerAnualIncome, setTaxPayerPJNumberWorkers));
 			}
-            //else {
-            //  return;
-            //}
+		 	else {
+			System.out.println("Error: Invalid type entered on TAX PAYERT TYPE. Program terminate.");
+			return;
+            }
+
 		}
 
 		double sum = 0.0;

@@ -18,7 +18,17 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123", "[7]exe-125", "[8]exe-139", "[P]-Projeto_Paralelo", "[C]-Curso_Alternativo"};
+        String[] exercicios = {"[1]-29", 
+                               "[2]-36", 
+                               "[3]exe-89", 
+                               "[4]exe-100", 
+                               "[5]exe-104", 
+                               "[6]exe-123", 
+                               "[7]exe-125", 
+                               "[8]exe-139", 
+                               "[P]-Projeto_Paralelo", 
+                               "[C]-Curso_Alternativo"
+                              };
         String x = "";
         boolean result = false;
         
@@ -216,85 +226,52 @@ public class App {
             }
         }
         return true;
-
     }
     
-        private static boolean executeExercicio104(Scanner sc) {
-            String[] exercicios104 = {"[1]exe104", "[2]exe104_2","[3]Voltar"};
-            boolean result5 = false;
+    private static boolean executeExercicio104(Scanner sc) {
+        String[] exercicios104 = {"[1]exe104", "[2]exe104_2","[3]Voltar"};
+        boolean result5 = false;
             
-            while (!result5) {
-                System.out.println(Arrays.toString(exercicios104));
-                String x5 = sc.nextLine();
-                switch (x5) {
-                    case "1":
-                        System.out.println("Execucao Exercicio 104");
-                        E104_1 novaExecucaoE104 = new E104_1();
-                        novaExecucaoE104.e104_1();
-                        result5 = true;
-                        break;
-
-                    case "2":
-                        System.out.println("Execucao Exercicio 104_2");
-                        E104_2 novaExecucaoE104_2 = new E104_2();
-                        novaExecucaoE104_2.e104_2();
-                        result5 = true;
-                        break;
-
-                    case "3":
-                        return false; // Go back to the main menu
-                    default:
-                        System.out.println("Selecione uma opcao valida");
-                        break;
-                }
-            }
-
-            return true;
-
-    }
-
-            private static boolean executeExercicio123(Scanner sc) {
-            String[] exercicios123 = {"[1]exe123", "[2]Voltar"};
-            boolean result6 = false;
-            
-            while (!result6) {
-                System.out.println(Arrays.toString(exercicios123));
-                String x6 = sc.nextLine();
-                switch (x6) {
-                    case "1":
-                        System.out.println("Execucao Exercicio 123");
-                        E123 novaExecucaoE123 = new E123();
-                        novaExecucaoE123.exe123();
-                        result6 = true;
-                        break;
-
-                    case "2":
-                        return false; // Go back to the main menu
-                    default:
-                        System.out.println("Selecione uma opcao valida");
-                        break;
-                }
-            }
-
-            return true;
-
-    }
-
-    private static boolean executeExercicio139(Scanner sc) {
-        String[] exercicios139 = {"[1]exe125", "[2]Voltar"};
-        boolean result8 = false;
-        
-        while (!result8) {
-            System.out.println(Arrays.toString(exercicios139));
-            String x8 = sc.nextLine();
-            switch (x8) {
+        while (!result5) {
+            System.out.println(Arrays.toString(exercicios104));
+            String x5 = sc.nextLine();
+            switch (x5) {
                 case "1":
-                    System.out.println("Execucao Exercicio 139");
-                    E139 novaExecucaoE139 = new E139();
-                    novaExecucaoE139.exe139();
-                    result8 = true;
+                    System.out.println("Execucao Exercicio 104");
+                    E104_1 novaExecucaoE104 = new E104_1();
+                    novaExecucaoE104.e104_1();
+                    result5 = true;
                     break;
+                case "2":
+                    System.out.println("Execucao Exercicio 104_2");
+                    E104_2 novaExecucaoE104_2 = new E104_2();
+                    novaExecucaoE104_2.e104_2();
+                    result5 = true;
+                    break;
+                case "3":
+                    return false; // Go back to the main menu
+                default:
+                    System.out.println("Selecione uma opcao valida");
+                    break;
+            }
+        }
+        return true;
+    }
 
+    private static boolean executeExercicio123(Scanner sc) {
+        String[] exercicios123 = {"[1]exe123", "[2]Voltar"};
+        boolean result6 = false;
+        
+        while (!result6) {
+            System.out.println(Arrays.toString(exercicios123));
+            String x6 = sc.nextLine();
+            switch (x6) {
+                case "1":
+                    System.out.println("Execucao Exercicio 123");
+                    E123 novaExecucaoE123 = new E123();
+                    novaExecucaoE123.exe123();
+                    result6 = true;
+                    break;
                 case "2":
                     return false; // Go back to the main menu
                 default:
@@ -302,10 +279,8 @@ public class App {
                     break;
             }
         }
-
         return true;
-
-}
+    }
 
     private static boolean executeExercicio125(Scanner sc) {
         String[] exercicios125 = {"[1]exe125", "[2]Voltar"};
@@ -321,7 +296,6 @@ public class App {
                     novaExecucaoE125.exe125();
                     result7 = true;
                     break;
-
                 case "2":
                     return false; // Go back to the main menu
                 default:
@@ -329,11 +303,32 @@ public class App {
                     break;
             }
         }
-
         return true;
+    }
 
-}
-
+    private static boolean executeExercicio139(Scanner sc) {
+        String[] exercicios139 = {"[1]exe125", "[2]Voltar"};
+        boolean result8 = false;
+    
+        while (!result8) {
+            System.out.println(Arrays.toString(exercicios139));
+            String x8 = sc.nextLine();
+            switch (x8) {
+                case "1":
+                    System.out.println("Execucao Exercicio 139");
+                    E139 novaExecucaoE139 = new E139();
+                    novaExecucaoE139.exe139();
+                    result8 = true;
+                    break;
+                case "2":
+                    return false; // Go back to the main menu
+                default:
+                    System.out.println("Selecione uma opcao valida");
+                    break;
+            }
+        }
+        return true;
+    }
 
     private static boolean executeProjetoParalelo(Scanner sc) {
         System.out.println("Verificador de Idade");

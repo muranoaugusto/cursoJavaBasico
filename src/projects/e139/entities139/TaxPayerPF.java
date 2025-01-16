@@ -26,12 +26,12 @@ public class TaxPayerPF extends TaxPayer {
     @Override
     public double taxPayed() {
         
-        Double TaxPayerPFMedicalBills 
-
-
-        * 0.15
-
-        * 0.15
+		if (getTaxPayerAnualIncome() < 20000.0) {
+			return getTaxPayerAnualIncome() * 0.15 - TaxPayerPFMedicalBills * 0.5;
+		}
+		else {
+			return getTaxPayerAnualIncome() * 0.25 - TaxPayerPFMedicalBills * 0.5;
+		}
     }
     
 }

@@ -6,6 +6,7 @@ import projects.e104.E104_1;
 import projects.e104.E104_2;
 import projects.e123.E123;
 import projects.e125.E125;
+import projects.e139.E139;
 import projects.e29.E29;
 import projects.e36.E36;
 import projects.e89.E89;
@@ -17,7 +18,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("teste");
         
-        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123","[7]exe-12", "[P]-Projeto_Paralelo","[C]-Curso_Alternativo"};
+        String[] exercicios = {"[1]-29", "[2]-36", "[3]exe-89", "[4]exe-100", "[5]exe-104", "[6]exe-123", "[7]exe-125", "[8]exe-139", "[P]-Projeto_Paralelo", "[C]-Curso_Alternativo"};
         String x = "";
         boolean result = false;
         
@@ -60,6 +61,11 @@ public class App {
                 case "7":
                     // Exercicios 125
                     result = executeExercicio125(sc);
+                    break;
+
+                case "8":
+                    // Exercicios 139
+                    result = executeExercicio139(sc);
                     break;
 
                 case "P":
@@ -274,6 +280,32 @@ public class App {
 
     }
 
+    private static boolean executeExercicio139(Scanner sc) {
+        String[] exercicios139 = {"[1]exe125", "[2]Voltar"};
+        boolean result8 = false;
+        
+        while (!result8) {
+            System.out.println(Arrays.toString(exercicios139));
+            String x8 = sc.nextLine();
+            switch (x8) {
+                case "1":
+                    System.out.println("Execucao Exercicio 139");
+                    E139 novaExecucaoE139 = new E139();
+                    novaExecucaoE139.exe139();
+                    result8 = true;
+                    break;
+
+                case "2":
+                    return false; // Go back to the main menu
+                default:
+                    System.out.println("Selecione uma opcao valida");
+                    break;
+            }
+        }
+
+        return true;
+
+}
 
     private static boolean executeExercicio125(Scanner sc) {
         String[] exercicios125 = {"[1]exe125", "[2]Voltar"};

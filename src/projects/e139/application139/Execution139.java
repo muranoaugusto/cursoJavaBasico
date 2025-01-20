@@ -1,11 +1,11 @@
 
 package projects.e139.application139;
 
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+import java.text.ParseException;
 
 import projects.e139.entities139.TaxPayer;
 import projects.e139.entities139.TaxPayerPF;
@@ -13,7 +13,7 @@ import projects.e139.entities139.TaxPayerPJ;
 
 public class Execution139 {
 
-	public void Execution139() throws ParseException {
+	public void execution139() throws ParseException {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -47,6 +47,8 @@ public class Execution139 {
 			System.out.println("Error: Invalid type entered on TAX PAYERT TYPE. Program terminate.");
 			return;
             }
+			
+			sc.close();
 
 		}
 
@@ -62,6 +64,6 @@ public class Execution139 {
 		System.out.println();
 		System.out.println("TOTAL TAXES: $ " + String.format("%.2f", sum));
 		
-		sc.close();
 	}
+
 }

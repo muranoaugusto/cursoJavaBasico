@@ -97,7 +97,10 @@ public class App {
     }
 
     private static boolean executeExercicio29(Scanner sc) {
-        String[] exercicios29 = {"[1]exe2901", "[2]exe2902", "[3]Voltar"};
+        String[] exercicios29 = {"[1]exe2901", 
+                                 "[2]exe2902", 
+                                 "[3]Voltar"
+                                };
         boolean result1 = false;
         
         while (!result1) {
@@ -127,7 +130,9 @@ public class App {
     }
 
     private static boolean executeExercicio36(Scanner sc) {
-        String[] exercicios36 = {"[1]exe36", "[2]Voltar"};
+        String[] exercicios36 = {"[1]exe36", 
+                                 "[2]Voltar"
+                                };
         boolean result2 = false;
         
         while (!result2) {
@@ -151,7 +156,14 @@ public class App {
     }
 
     private static boolean executeExercicio89(Scanner sc) {
-        String[] exercicios89 = {"[0]exe89-Exemplo", "[1]Exe-01", "[2]Exe-02", "[3]Exe-03", "[4]Exe-04", "[5]Exe-05", "[6]Voltar"};
+        String[] exercicios89 = {"[0]exe89-Exemplo", 
+                                 "[1]Exe-01", 
+                                 "[2]Exe-02", 
+                                 "[3]Exe-03", 
+                                 "[4]Exe-04", 
+                                 "[5]Exe-05", 
+                                 "[6]Voltar"
+                                };
         boolean result3 = false;
         
         while (!result3) {
@@ -205,7 +217,9 @@ public class App {
     }
 
     private static boolean executeExercicio100(Scanner sc) {
-        String[] exercicios100 = {"[1]exe100", "[2]Voltar"};
+        String[] exercicios100 = {"[1]exe100", 
+                                  "[2]Voltar"
+                                 };
         boolean result4 = false;
         
         while (!result4) {
@@ -229,7 +243,10 @@ public class App {
     }
     
     private static boolean executeExercicio104(Scanner sc) {
-        String[] exercicios104 = {"[1]exe104", "[2]exe104_2","[3]Voltar"};
+        String[] exercicios104 = {"[1]exe104", 
+                                  "[2]exe104_2", 
+                                  "[3]Voltar"
+                                };
         boolean result5 = false;
             
         while (!result5) {
@@ -259,7 +276,9 @@ public class App {
     }
 
     private static boolean executeExercicio123(Scanner sc) {
-        String[] exercicios123 = {"[1]exe123", "[2]Voltar"};
+        String[] exercicios123 = {"[1]exe123", 
+                                  "[2]Voltar"
+                                };
         boolean result6 = false;
         
         while (!result6) {
@@ -283,7 +302,9 @@ public class App {
     }
 
     private static boolean executeExercicio125(Scanner sc) {
-        String[] exercicios125 = {"[1]exe125", "[2]Voltar"};
+        String[] exercicios125 = {"[1]exe125", 
+                                  "[2]Voltar"
+                                 };
         boolean result7 = false;
         
         while (!result7) {
@@ -307,7 +328,9 @@ public class App {
     }
 
     private static boolean executeExercicio139(Scanner sc) {
-        String[] exercicios139 = {"[1]exe125", "[2]Voltar"};
+        String[] exercicios139 = {"[1]exe125", 
+                                  "[2]Voltar"
+                                 };
         boolean result8 = false;
     
         while (!result8) {

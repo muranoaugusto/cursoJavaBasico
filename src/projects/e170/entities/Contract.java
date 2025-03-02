@@ -2,55 +2,49 @@ package projects.e170.entities;
 
 import java.util.Date;
 
-public  class   Contract{
-        private Integer numero,
-                        numeroDeParcelas;
-        private Date    data;
-        private Double  valor;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
+public class Contract {
 
-    public Contract() {
-    }
+	private Integer number;
+	private LocalDate date;
+	private Double totalValue;
+	
+	private List<Installment> installments = new ArrayList<>();
+	
+	public Contract(Integer number, LocalDate date, Double totalValue) {
+		this.number = number;
+		this.date = date;
+		this.totalValue = totalValue;
+	}
 
-    public Contract (Integer numero, Date data, Double valor, Integer numeroParcelas) {
-        this.numero = numero;
-        this.data = data;
-        this.valor = valor;
-        this.numeroDeParcelas = numeroParcelas;
-    }
+	public Integer getNumber() {
+		return number;
+	}
 
-    public Integer getNumero() {
-        return this.numero;
-    }
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
 
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
+	public LocalDate getDate() {
+		return date;
+	}
 
-    public Integer getNumeroDeParcelas() {
-        return this.numeroDeParcelas;
-    }
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
 
-    public void setNumeroDeParcelas(Integer numeroDeParcelas) {
-        this.numeroDeParcelas = numeroDeParcelas;
-    }
+	public Double getTotalValue() {
+		return totalValue;
+	}
 
-    public Date getData() {
-        return this.data;
-    }
+	public void setTotalValue(Double totalValue) {
+		this.totalValue = totalValue;
+	}
 
-    public void setData(Date data) {
-        this.data = data;
-    }
-
-    public Double getValor() {
-        return this.valor;
-    }
-
-    public void setValor(Double valor) {
-        this.valor = valor;
-    }
-
-
-
+	public List<Installment> getInstallments() {
+		return installments;
+	}
 }

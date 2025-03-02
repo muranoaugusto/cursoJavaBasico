@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "projects.e170.application.Program",
+            "projectName": "cursoJavaBasico_46a9e99f"
+        },
+        {
+            "type": "java",
             "name": "NumToList",
             "request": "launch",
             "mainClass": "projects.projetoParalelo.numberToList.NumToList",
